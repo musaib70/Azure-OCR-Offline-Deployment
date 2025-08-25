@@ -35,8 +35,9 @@ cd Azure-OCR-Offline-Deployment
 
 ### 3. Run Locally
 
-- Build and run the OCR service locally:
+Build and run the OCR service locally:
 ```bash
 docker-compose up --build -d
 ```
-
+Then open your browser and navigate to:
+👉 http://localhost:8000
