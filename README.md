@@ -1,16 +1,33 @@
-# Secure OCR On-Prem Deployment
+# Azure OCR Offline Deployment
 
-This project demonstrates deploying **Azure OCR AI** in an **air-gapped on-premises environment** using Docker.
+This project demonstrates the deployment of **Azure Cognitive Services OCR** in a secure, air-gapped, on-premises environment using Docker.
 
-## Features
-- Offline deployment of Azure OCR
-- Secure document uploads
-- OCR extraction results displayed via web UI
-- Fully containerized with Docker & Docker Compose
+---
 
-## Run Locally
+## 🚀 Features
+- Offline OCR AI service (no internet required)
+- Secure deployment in air-gapped environments (e.g., banking)
+- Docker Compose based container orchestration
+- Automated document recognition while ensuring compliance and data privacy
+
+---
+
+## 🏗️ Architecture
+
+Below is the high-level architecture of the offline OCR deployment:
+
+![Architecture Diagram](docs/architecture.png)
+
+---
+
+## 📖 Deployment Guide
+
+### 1. Prerequisites
+- Docker installed on the host system  
+- Docker Compose installed  
+- Offline package of Azure Cognitive Services OCR container (provided by Microsoft)  
+
+### 2. Clone the Repository
 ```bash
-docker-compose up --build -d
-```
-
-Then open: [http://localhost:8000](http://localhost:8000)
+git clone https://github.com/musaib70/Azure-OCR-Offline-Deployment.git
+cd Azure-OCR-Offline-Deployment
