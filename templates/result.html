@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OCR Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Extracted OCR Data</h1>
+        <div class="results">
+            <ul>
+                {% for item in data %}
+                <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <a href="/">← Back to Upload</a>
+    </div>
+</body>
+</html>

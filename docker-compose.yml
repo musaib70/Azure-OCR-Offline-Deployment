@@ -1,0 +1,26 @@
+azure-cognitive-service-read:
+  container_name: azure-cognitive-service-read
+  image: mcr.microsoft.com/azure-cognitive-services/form-recognizer/read-3.1:latest
+  environment:
+    ApiKey: ""
+    Billing: ""
+    Mounts:License: /license
+    DownloadLicense: "True"
+    Eula: accept
+    Logging:Console:LogLevel:Default: Information
+    SharedRootFolder: /shared
+    Mounts:Shared: /shared
+    Mounts:Output: /logs
+  volumes:
+    - type: bind
+      source: /root/alfalah/shared
+      target: /shared
+    - type: bind
+      source: /root/alfalah/logs
+      target: /logs
+    - type: bind
+      source: /root/alfalah/license
+      target: /license
+  ports:
+    - "5050:5000"
+  tty: true
