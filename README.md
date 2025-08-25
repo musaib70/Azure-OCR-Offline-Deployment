@@ -48,7 +48,7 @@ Then open your browser and navigate to:
 - OCR service processes the documents automatically
 - Extracted text & JSON results are stored in the output/ folder
 
-5. Stop the Services
+### 5. Stop the Services
 ```bash
 docker-compose down
 ```
