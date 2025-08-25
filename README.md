@@ -31,11 +31,12 @@ Below is the high-level architecture of the offline OCR deployment:
 ```bash
 git clone https://github.com/musaib70/Azure-OCR-Offline-Deployment.git
 cd Azure-OCR-Offline-Deployment
+```
 
 ### 3. Run Locally
 
 - Build and run the OCR service locally:
-
 ```bash
 docker-compose up --build -d
+```
 
