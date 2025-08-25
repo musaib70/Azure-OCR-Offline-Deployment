@@ -16,7 +16,7 @@ This project demonstrates the deployment of **Azure Cognitive Services OCR** in 
 
 Below is the high-level architecture of the offline OCR deployment:
 
-![Architecture Diagram](docs/architecture.png)
+![Architecture Diagram](docs/architecture-diagram.png)
 
 ---
 
