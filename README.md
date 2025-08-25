@@ -41,3 +41,14 @@ docker-compose up --build -d
 ```
 Then open your browser and navigate to:
 👉 http://localhost:8000
+
+4. Document Processing
+
+- Place input files in the upload/ folder
+- OCR service processes the documents automatically
+- Extracted text & JSON results are stored in the output/ folder
+
+5. Stop the Services
+```bash
+docker-compose down
+```
